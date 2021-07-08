@@ -1,18 +1,20 @@
-const validator=require('validator')
-const chalk=require('chalk')
 
-const n=require('./note.js')
-// urno
-console.log(n())
+const yargs= require('yargs')
 
-console.log(validator.isEmail('anilsunamgmail.com'))
-// console.log(chalk.redBright.bold("Edited by chalk")+ chalk.bold("4.1"))
-// console.log(chalk.keyword('orange')('orange color'))
-// console.log(chalk.rgb(123,45,67).underline('ubterlined reddish color'))
-const error =chalk.bold.red
-const warning= chalk.keyword('orange')
-const success=chalk.green.inverse
+yargs.version('1.2.3')
+yargs.command({
+    command: 'insert',
+    describe: 'insert data ',
+    handler: function () {
+        console.log('inserting data')
+    }
+})
+yargs.command({
+    command:'delete',
+    describe:'delete data',
+    handler: function (){
+        console.log('deleting data')
+    }
+})
 
-console.log('\t'+error('error report'))
-console.log('\t'+warning('warning report'))
-console.log('\t'+success('success report'))
+console.log(yargs.argv)
