@@ -1,19 +1,23 @@
 const fs = require("fs");
-const chalk = require("chalk");
 
+const chalk = require("chalk");
+/**
+ * add function to add notes
+ * @param title title of note  
+ * @param  body short desc about note 
+ */
 const addNote = function (title, body) {
   const data = loadData();
-const dub=data.filter(function (data){return data.title===title})
-if (dub.length===0){
-
+  const dub = data.filter((data) => data.title === title);
+  if (dub.length === 0) {
     data.push({
-        title: title,
-        body: body,
-      });
-      saveData(data);
-} else{
-    console.log(chalk.inverse.redBright('note already  exists'))
-} 
+      title: title,
+      body: body,
+    });
+    saveData(data);
+  } else {
+    console.log(chalk.inverse.redBright("note already  exists"));
+  }
 };
 
 const saveData = function (data) {
@@ -22,7 +26,12 @@ const saveData = function (data) {
 };
 
 const getNote = function () {
-  console.log(loadData());
+    loadData().forEach(note => {
+        console.log(chalk.yellow.inverse(note.title));
+        console.log(chalk.blueBright.inverse (note.body),'\n');
+        
+    });
+//   console.log(loadData());
 };
 const loadData = function () {
   try {

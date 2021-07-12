@@ -41,11 +41,13 @@ yargs.command({
             type:'string'
         }
     },
-    handler: function (argv){
-      
-         
+    handler(argv){
         mynote.deleteNote(argv.title)
     }
+      
+         
+        
+    
 })
 yargs.command({
     command:'list',
