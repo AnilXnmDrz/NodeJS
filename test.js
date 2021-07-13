@@ -1,28 +1,18 @@
+const Logger = require("./mylogger.js");
 
-const tasks={
-    tasks:[{
-        text:"shopping",
-        completed:true
-    },
-    {
-        text:"clean yard",
-        completed:false
-    },
-    {
-        text:"file course",
-        completed:false
-    },
-],
-taskStatus(){
-    //  this.tasks.forEach((task) => {
-   
-    //   if(task.completed ===false){
-    //       console.log(task.text ," pending")
-    //   }
-    // })
-    return this.tasks.filter((tasks)=>tasks.completed===false) //es6 arrow func
+
+
+const logger = new Logger();
+
+let x = 331;
+// logger.trace("this is traces tetst");
+// logger.debug("this is msg from debug", x);
+// logger.error(x, "this is error",x," message",x);
+logger.info("this is ", x, "info message");
+const demofunction= function(){
+    
+    logger.warn("this is ", x, "info message");
 }
+demofunction()
 
-}
 
-console.log(tasks.taskStatus());
