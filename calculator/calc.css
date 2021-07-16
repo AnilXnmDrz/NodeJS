@@ -1,0 +1,72 @@
+#maindiv {
+  background-color: rgba(26, 25, 25, 0.979);
+  margin: auto;
+  margin-top: 60px;
+
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  border: solid 5px rgb(126, 226, 33);
+  border-radius: 20px;
+  border-block-color: rgb(21, 190, 106);
+}
+#calcScreen {
+  text-align: center;
+  font-size: 18px;
+  height: 1cm;
+  border-radius: 10px;
+  border-color: rgb(189, 139, 33);
+  background-color: rgb(113, 155, 113);
+}
+
+#subdiv {
+  background-color: rgba(255, 255, 0, 0.534);
+}
+#calcScreen {
+  width: auto;
+}
+
+.btn {
+  padding: 16px;
+
+  display: inline-block;
+
+  color: whitesmoke;
+  text-align: center;
+  height: 20px;
+  width: 16px;
+
+  margin-top: 2mm;
+  margin-left: 1mm;
+  vertical-align: middle;
+
+  border-radius: 10px;
+  border: solid 1px green;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+.num {
+  /* border: solid 1px gray; */
+  color: white;
+  /* text-align:center; */
+  vertical-align: middle;
+  /* display: inline-block; */
+}
+.operation {
+  border: solid 1px orangered;
+  border-block-color: orange;
+}
+.btn:hover {
+  color: orangered;
+  background-color: black;
+  display: inline-block;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+#logo {
+  color: turquoise;
+}

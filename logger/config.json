@@ -1,5 +1,5 @@
 {
-    "level":"All",
+    "level":"None",
     "logpath":"./output.log"
 
 }

@@ -1,40 +1,4 @@
 
-
- 2021-6-2 14:22:31 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 14:22:31 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:7:52 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:7:52 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:8:6 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:8:6 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:8:10 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:8:10 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:8:56 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:8:56 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:9:10 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:9:10 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:9:59 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:9:59 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:10:48 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:10:48 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:10:56 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:10:56 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:11:13 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:11:13 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:11:23 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:11:23 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:12:15 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:12:15 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:0 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:0 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:9 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:9 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:11 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:11 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:14 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:14 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:23 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:23 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:53 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:53 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
- 2021-6-2 15:13:56 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
- 2021-6-2 15:13:56 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
+ 2021-6-2 15:28:22 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
+ 2021-6-2 15:28:59 	Error:	test.js->Object.<anonymous>->line:10	 	message: 331 this is error 331  message 331
+ 2021-6-2 15:28:59 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message

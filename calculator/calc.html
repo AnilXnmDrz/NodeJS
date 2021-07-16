@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="calc.css"
+  </head>
+  <body>
+    <div id="maindiv">
+      <p id="logo"><i> Robo MQ</i></p>
+      <input id="calcScreen" screen="calcScreen" value="0" /><br />
+
+      <br />
+
+      <a class="btn operation" onclick="Clear()">c</a>
+      <a class="btn operation" onclick="btnhandler('(')">(</a>
+      <a class="btn operation" onclick="btnhandler(')')">)</a>
+      <a class="btn operation" onclick="btnhandler('/')">/</a>
+
+      <br />
+
+      <a class="btn num" onclick="btnhandler('7')">7</a>
+      <a class="btn num" onclick="btnhandler('8')">8</a>
+      <a class="btn num" onclick="btnhandler('9')">9</a>
+      <a class="btn operation" onclick="btnhandler('*')">*</a>
+
+      <br />
+
+      <a class="btn num" onclick="btnhandler('4')">4</a>
+      <a class="btn num" onclick="btnhandler('5')">5</a>
+      <a class="btn num" onclick="btnhandler('6')">6</a>
+      <a class="btn operation" onclick="btnhandler('-')">-</a>
+
+      <br />
+
+      <a class="btn num" onclick="btnhandler('1')">1</a>
+      <a class="btn num" onclick="btnhandler('2')">2</a>
+      <a class="btn num" onclick="btnhandler('3')">3</a>
+      <a class="btn operation" onclick="btnhandler('+')">+</a>
+
+      <br />
+
+      <a class="btn operation" onclick="Back()">&#8592</a>
+      <a class="btn num" onclick="btnhandler('0')">0</a>
+      <a class="btn num" onclick="btnhandler('.')">.</a>
+      <a class="btn operation" onclick="equalsto()">=</a>
+
+      <br />
+    </div>
+
+    <script src="./calculator.js"></script>
+  </body>
+</html>
