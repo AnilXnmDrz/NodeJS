@@ -5,6 +5,7 @@ var decimalInserted = false;
  *
  * @param {handles incoming button} arg
  */
+
 function btnhandler(arg) {
   // alert("alert "+arg)
   var ScreenEquation = document.getElementById("calcScreen");
@@ -46,28 +47,36 @@ const checkdecimal = function (arg, ScreenEquation) {
     decimalInserted = true;
   } else if (arg != ".") {
     //  alert(ScreenEquation.value.length)
-    if (
-      isNaN(ScreenEquation.value[ScreenEquation.value.length - 1]) === true &&
-      isNaN(arg) === true
-    ) {
-      if (
-        ScreenEquation.value[ScreenEquation.value.length - 1] === "(" &&
-        isNaN(arg) === false
-      ) {
+    var previous_input = ScreenEquation.value[ScreenEquation.value.length - 1];
+    // alert(previous_input)
+    if (isNaN(previous_input) === true && isNaN(arg) === true) {
+     
+      if (previous_input === "(" && isNaN(arg) === false) {
         ScreenEquation.value += arg;
       } else if (
-        ScreenEquation.value[ScreenEquation.value.length - 1] === ")" &&
+        previous_input === ")" &&
         (arg === "+" || arg === "-" || arg === "*" || arg === "/")
       ) {
         ScreenEquation.value += arg;
         decimalInserted = false;
+      } else if ( arg === "(" &&
+        (previous_input === "+" ||
+        previous_input === "-" ||
+        previous_input === "(" ||
+        previous_input === "*" ||
+        (previous_input === "/"))
+      ) {
+        ScreenEquation.value += arg;
+      
       } else {
         alert("Error: operator followed by operator");
       }
-    } else if (arg === "+" || arg === "-" || arg === "*" || arg === "/") {
+    } 
+    else if (arg === "+" || arg === "-" || arg === "*" || arg === "/") {
       ScreenEquation.value += arg;
       decimalInserted = false;
-    } else {
+    } 
+    else {
       ScreenEquation.value += arg;
     }
   } else {
@@ -132,6 +141,38 @@ const parseEq = function (val) {
   return equation;
 };
 
+const checkBracketPair = function (eq) {
+  // console.log("in checkbracket",eq[0]);
+  var firstInsert = false;
+  bracketStack = [];
+  var openB = -1;
+  var closeB = null;
+  let i = 0;
+  while (firstInsert === false || bracketStack.length != 0) {
+    // console.log("equation i", eq[i]);
+    if (eq[i] === "(") {
+      // console.log("found(");
+      if (openB === -1) {
+        openB = i;
+        firstInsert = true;
+        // console.log("firstIns", firstInsert, openB);
+      }
+      bracketStack.push(i);
+      // console.log("stack", bracketStack);
+    } else if (eq[i] === ")") {
+      bracketStack.pop();
+
+      // console.log("stack", bracketStack);
+      if (bracketStack.length===0) {
+        closeB = i;
+      }
+    }
+    i += 1;
+  }
+  // console.log("openb and closeb", openB, closeB);
+  return closeB
+};
+
 /**
  * Recursion is used to extract partial equations from brackets,
  * which are then passed to the simplify function for evaluation.
@@ -139,27 +180,33 @@ const parseEq = function (val) {
  * @returns
  */
 const solve_eq = function (eq) {
+
+  console.log("current eq",eq);
   if (eq.indexOf("(") > -1) {
     var openB = eq.indexOf("(");
-    var closeB = eq.lastIndexOf(")");
+    var closeB = checkBracketPair(eq)  //eq.lastIndexOf(")");
 
     let calc = eq.splice(openB + 1, closeB - openB - 1);
-
+    console.log("before rec", eq);
     result = solve_eq(calc);
+    
   } else {
     result = simplify(eq);
 
     return result;
   }
 
-  if (openB === 0) {
+  if (openB === 0 || isNaN(eq[openB - 1]) === true) {
     //for bracket -begining
     eq.splice(openB, 2, String(result));
   } else {
     eq.splice(openB, 2, "*", String(result));
   }
-
+  if (eq.indexOf("(") > -1) {
+    result = solve_eq(eq);
+  }
   result = simplify(eq);
+  console.log("eqution", eq);
 
   return eq;
 };
@@ -239,7 +286,9 @@ const div = (a, b) => parseFloat(a) / parseFloat(b);
 // var val= "2(3*2-1+3)/2"
 // var val = "(2.3*3(4+6-31)/66)";
 
+// var val = "4-(2+2)+(7*2)+2(1+1)*(2+2)";
 // equation = parseEq(val);
 // console.log("eq=", equation);
+// // console.log(checkBracketPair(equation));
 // eq = solve_eq(equation);
 // console.log("in runner", eq);
