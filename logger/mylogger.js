@@ -39,7 +39,7 @@ class Logger extends loglevel {
    * @returns log level, output dir
    */
   readConfig() {
-    const configbuff = fs.readFileSync("./config.json");
+    const configbuff = fs.readFileSync(__dirname+"/config.json");
     return JSON.parse(configbuff.toString());
   }
 
@@ -124,7 +124,7 @@ class Logger extends loglevel {
             '2': [Arguments] { '0': 'this is ', '1': 331, '2': 'info message' }              //user message to be logged
 }
    * @param {*} lvl logging level
-   * @param {*} msg msg message to be loged
+   * @param {*} msg msg message to be logged
    */
   formatS() {
     let args = ""; //variable for appending n args from user
@@ -153,11 +153,12 @@ class Logger extends loglevel {
   dateTime(){
       const today=new Date()
       let YY=today.getFullYear()
-      let MM=today.getMonth()
-      let DD=today.getDay()
+      let MM=today.getMonth()+1
+      let DD=today.getDate()
       let hr=today.getHours()
       let min=today.getMinutes()
       let sec=today.getSeconds()
+      
     return YY+'-' +MM+'-' +DD+" " +hr+':' +min+':' +sec+" "      
   }
 }

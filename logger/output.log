@@ -2,3 +2,58 @@
  2021-6-2 15:28:22 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
  2021-6-2 15:28:59 	Error:	test.js->Object.<anonymous>->line:10	 	message: 331 this is error 331  message 331
  2021-6-2 15:28:59 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
+ 2021-6-5 16:39:50 	Error:	test.js->Object.<anonymous>->line:22	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 16:44:17 	Error:	test.js->Object.<anonymous>->line:22	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 16:45:59 	Error:	test.js->Object.<anonymous>->line:22	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 16:49:8 	Error:	test.js->Object.<anonymous>->line:22	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 16:55:43 	Error:	test.js->Object.<anonymous>->line:22	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:7:35 	Error:	test.js->Object.<anonymous>->line:26	 	message: greater than 10
+ 2021-6-5 17:15:45 	Error:	test.js->Object.<anonymous>->line:26	 	message: greater than 10
+ 2021-6-5 17:16:6 	Error:	test.js->Object.<anonymous>->line:26	 	message: greater than 10
+ 2021-6-5 17:16:6 	Info:	test.js->Object.<anonymous>->line:29	 	message: error handled :greater than 10
+ 2021-6-5 17:20:38 	Error:	test.js->Object.<anonymous>->line:26	 	message: greater than 10
+ 2021-6-5 17:20:38 	Info:	test.js->Object.<anonymous>->line:29	 	message: error solved:greater than 10
+ 2021-6-5 17:28:16 	Error:	test.js->Object.<anonymous>->line:27	 	message: greater than 10
+ 2021-6-5 17:28:16 	Info:	test.js->Object.<anonymous>->line:30	 	message: error solved:greater than 10
+ 2021-6-5 17:30:50 	Error:	test.js->Object.<anonymous>->line:27	 	message: greater than 10
+ 2021-6-5 17:30:50 	Info:	test.js->Object.<anonymous>->line:30	 	message: error solved:greater than 10
+ 2021-6-5 17:31:6 	Error:	test.js->Object.<anonymous>->line:27	 	message: greater than 10
+ 2021-6-5 17:31:6 	Info:	test.js->Object.<anonymous>->line:30	 	message: error solved:greater than 10
+ 2021-6-5 17:31:21 	Error:	test.js->Object.<anonymous>->line:27	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:31:33 	Error:	test.js->Object.<anonymous>->line:27	 	message: ReferenceError: xjj is not defined
+ 2021-6-5 17:34:19 	Error:	test.js->Object.<anonymous>->line:27	 	message: ReferenceError: xjj is not defined
+ 2021-6-5 17:35:46 	Error:	test.js->Object.<anonymous>->line:27	 	message: ReferenceError: xjj is not defined
+ 2021-6-5 17:35:46 	Warn:	test.js->Object.<anonymous>->line:28	 	message: ReferenceError: xjj is not defined
+ 2021-6-5 17:37:15 	Error:	test.js->Object.<anonymous>->line:27	 	message: ReferenceError: xjj is not defined
+ 2021-6-5 17:37:15 	Warn:	test.js->Object.<anonymous>->line:28	 	message: ReferenceError: xjj is not defined
+ 2021-6-5 17:40:26 	Error:	test.js->Object.<anonymous>->line:27	 	message: greater than 10
+ 2021-6-5 17:40:26 	Warn:	test.js->Object.<anonymous>->line:28	 	message: greater than 10
+ 2021-6-5 17:40:26 	Info:	test.js->Object.<anonymous>->line:31	 	message: error solved:greater than 10
+ 2021-6-5 17:41:33 	Error:	test.js->Object.<anonymous>->line:27	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:41:33 	Warn:	test.js->Object.<anonymous>->line:28	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:44:31 	Error:	test.js->Object.<anonymous>->line:29	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:44:31 	Warn:	test.js->Object.<anonymous>->line:30	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:44:45 	Error:	test.js->Object.<anonymous>->line:29	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:44:45 	Warn:	test.js->Object.<anonymous>->line:30	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:46:34 	Error:	test.js->Object.<anonymous>->line:30	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:46:34 	Warn:	test.js->Object.<anonymous>->line:31	 	message: Error: ENOENT: no such file or directory, open './hhh.txt'
+ 2021-6-5 17:51:11 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 17:51:11 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-5 17:51:26 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 17:51:26 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:11:44 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:11:44 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:13:21 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:13:21 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:14:8 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:14:8 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:14:22 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:14:22 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:19:43 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: __dirnme is not defined
+ 2021-6-5 18:19:43 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: __dirnme is not defined
+ 2021-6-5 18:27:57 	#Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-5 18:27:57 	#Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-6-1 17:10:8 	Error:	test.js->Object.<anonymous>->line:31	 	message: ReferenceError: window is not defined
+ 2021-6-1 17:10:8 	Warn:	test.js->Object.<anonymous>->line:32	 	message: ReferenceError: window is not defined
+ 2021-7-20 9:39:3 	Info:	test.js->Object.<anonymous>->line:11	 	message: this is  331 info message
+ 2021-7-20 9:39:3 	Warn:	test.js->demofunction->line:14	 	message: this is  331 info message
